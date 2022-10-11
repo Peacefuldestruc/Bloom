@@ -1,0 +1,159 @@
+/* 
+    Pink: #e7718b
+    Black: #1b1d20
+    Laptop-prim: #c4c5c8
+    Laptop-case: #575455
+    Laptop-thingy: #898587
+    Border-bottom: #fae2e7
+
+*/
+
+:root {
+    --prim: #e7718b;
+    --sec: #26292e;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* Utility Classes */
+
+.cursive {
+    color: white;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.my-btn {
+    color: white;
+    background: rgb(28,35,33);
+    background: linear-gradient(to bottom, rgb(94, 94, 94) 0%, rgb(68, 67, 67) 50%,rgba(28,35,33,1)  100%);
+    border-top: rgba(134,122,125,1) solid 4px;
+}
+
+.my-btn:hover {
+    color: white;
+    background: rgb(28,35,33);
+    background: linear-gradient(to bottom, rgba(134,122,125,1) 0%,rgba(134,122,125,1) 10% , rgb(68, 67, 67) 50%,rgba(28,35,33,1)  100%);
+}
+
+/* Header Style */
+
+.header {
+    background-color: var(--sec);
+    padding: 16px 0;
+}
+
+.social-link {
+    font-size: 18px;
+    color: black;
+    padding: 2px 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+/* MacBook Style */
+
+.macbook-wrapper {
+    width: 600px;
+    height: 400px;
+}
+
+.top-screen {
+    background-color: black;
+    margin: 0 auto;
+    width: 400px;
+    height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+
+.webcam {
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
+.screen {
+    position: absolute;
+    height: 230px;
+    width: 380px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.bottom {
+    width: 500px;
+    height: 20px;
+    background-color: rgb(210, 210, 210);
+    margin: 0 auto;
+    border-bottom: solid rgb(144, 144, 144) 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.mac-logo {
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 6px;
+    transform: translateX(-50%);
+}
+
+/* Main */
+
+.hero-section {
+    padding: 50px 0;
+    background-color: var(--prim);
+}
+
+.top-section {
+    padding: 50px 0;
+    border-bottom: solid 20px #fae2e7;
+    background-color: #f4f4f6;
+}
+
+.product-section {
+    padding: 50px 0;
+}
+
+.box {
+    aspect-ratio: 2 / 1;
+    width: calc(90% / 2);
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(88, 88, 88) 0%, rgb(37, 37, 37) 50%,rgb(0, 0, 0)  100%);
+    color: white;
+    border: solid rgb(180, 180, 180) 10px;
+    font-size: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 20px rgb(141, 141, 141);;
+}
+
+.box .icon {
+    margin-top: 16%;
+}
+
+.footer {
+    background: var(--sec);
+    padding: 20px 0;
+}
